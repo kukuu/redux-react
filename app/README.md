@@ -1,8 +1,6 @@
 
 
-## Seneca Learning
-
-## React, Redux ans Saas build.
+# React, Redux and Saas build.
 
 To get started, first install all the necessary dependencies.
 ```
