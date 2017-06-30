@@ -48,6 +48,8 @@ Whenever application state changes, components are re-rendered.
 
 Changes made to the application state. An object with 2 keys. Type and paylaod
 
+Changes, and editing in the development environment comes with live reload!
+
 
 # Calorie Converter
 
