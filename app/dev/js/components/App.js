@@ -7,7 +7,7 @@ require('../../scss/style.scss');
 
 const App = () => (
     <div>
-    	<h1>Seneca Learning</h1>
+    	<h1>Managing Weight</h1>
     	<h2>Obesity</h2>
     	<p>Over 60 percent of U.S. adult women are overweight, according to 2007 estimates from the National Center for Health Statistics of 
     	the Center for Disease Control and Prevention. Just over one-third of overweight adult women are obese.</p>
