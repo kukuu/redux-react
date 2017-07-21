@@ -17,7 +17,7 @@ Start the development server (changes will now update live in browser)
 > npm run start
 ```
 
-To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
+To view your project, go to: [http://localhost:3050/](http://localhost:3050/)
 
 > Each folder has some notes on architectural direction and development
 
@@ -48,7 +48,7 @@ Whenever application state changes, components are re-rendered.
 
 Changes made to the application state. An object with 2 keys. Type and paylaod
 
-Changes, and editing in the development environment comes with live reload!
+Editing in the development environment comes with live reload!
 
 
 # Calorie Converter
