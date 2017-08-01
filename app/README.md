@@ -17,7 +17,7 @@ Start the development server (changes will now update live in browser)
 > npm run start
 ```
 
-To view your project, go to: [http://localhost:3050/](http://localhost:3050/)
+To view your project, go to: [http://localhost:3000/](http://localhost:3050/)
 
 > Each folder has some notes on architectural direction and development
 
