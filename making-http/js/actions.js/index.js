@@ -27,6 +27,7 @@ const reducer = (state, action) => {
  
 // STORE 
 const config = {
+ //callback based AJAX library with promise
   client: axios
 };
 
