@@ -9,10 +9,12 @@ function calsPerDay() {
     let weight = find("weight").value / 2.2
     let result = 0;
 
+    //Male algorithm
     if (find("male").checked) {
       result = 66.47 + (13.75 * weight) + (5.0 * height - (6.75 * age))
     }
 
+        //female algorithm
     else if (find("female").checked) {
       result = 665.09 + (9.56 * weight) + (1.84 * height - (4.67 * age))
     }
