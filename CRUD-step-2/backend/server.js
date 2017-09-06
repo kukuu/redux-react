@@ -14,6 +14,7 @@ mongodb.MongoClient.connect(dbUrl, function(err, db){
 	});
 
 //moved server into DB connection. So first we connect to DB and then run the function
+// in step 1 server sits outside the db initialisation.
 app.listen(8078, () => console.log('Server is running on localhost: 8078'))
 
 })
