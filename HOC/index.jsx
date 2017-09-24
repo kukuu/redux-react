@@ -71,7 +71,7 @@ class Label extends React.Component {
 	}
 }
 
-// For the label, we create a new component and as its value we inject the component as an argument of the HOC
+// Note: For the label, we create a new component and as its value we inject the component as an argument of the HOC
 
 const LabelHOC = HOC(label);
 
