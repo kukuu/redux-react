@@ -32,6 +32,7 @@ class UserList extends Component {
 
 // Get apps state and pass it as props to UserList
 //      > whenever state changes, the UserList will automatically re-render
+// No need to add any further reload routines
 
 function mapStateToProps(state) {
     return {
