@@ -44,7 +44,7 @@
 GraphQL is a query language which provides a common interface between the client and the server for data fetching and manipulations.
 
 The client asks for various data from the GraphQL server via queries. The response format is described in the query and defined by the client instead of the server: they are called client‐specified queries. 
-The structure of the data is not hardcoded as in traditional REST APIs - this makes retrieving data from the server more efficient for the client.
+The structure of the data is not hardcoded as in traditional REST APIs - this makes retrieving data from the server more efficient for the client, and also separation of functions.
 
 
 For example, the client can ask for linked resources without defining new API endpoints. With the following GraphQL query, we can ask for the user specific fields and the linked friends resource as well.
