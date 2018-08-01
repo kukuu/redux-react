@@ -1,5 +1,5 @@
 //Author Alexander Adu-Sarkodie
-//TODO: Refactor form with HOC and lodash, and listoption methods
+//TODO: Refactor form with HOC and lodash (see extended scripts), and listoption methods
 	//Create a config object of types, mapping the controllers
 	// create an object dependencies for the types
 	//Use redux Form Helper methods to pass object types and drill down to leaf nodes
