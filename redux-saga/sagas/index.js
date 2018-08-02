@@ -1,3 +1,6 @@
+// Author - Alexander Adu-Sarkodie
+//Composing  redux-saga middleware
+
 
 import '../runtime';
 import { call, put, takeEvery } from 'redux-saga/effects';
