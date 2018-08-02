@@ -25,7 +25,7 @@ ADD_USER_BUTTON_CLICKED
 
 ## Actions vs. Action Creators
 
-Action creators are functions that create objects, actions are the objects that get created (returned). You pass them as argument together with dispatch to the bindActionCreators in the matchDispatchToProps function. This function alo receive dispatch as argument.
+Action creators are functions that create objects, actions are the objects that get created (returned). You pass them as argument together with dispatch to the bindActionCreators in the matchDispatchToProps function. This function also receives dispatch as argument.
 
 **Action creator**
 ```
