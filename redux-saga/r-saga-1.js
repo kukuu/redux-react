@@ -2,20 +2,24 @@
 // Author - Alexander Adu-Sarkodie
 //Using redux-saga
 //This is a counter based application
-//runtime is a polyfill to support generator functions
 
 import 'runtime';
 import { createStore, applyMiddleware } from 'redux';
 import { logger } from 'logger-redux';
+import { createSagaMiddleware } from 'redux-saga';
 import { axios } from 'axios';
 
-let middleware = applyMiddleware(logger);
+import { fetchUserWatcher } from './sagas'
+
+let sagaMiddleware = createSagaMiddleware();
+let middleware = applyMiddleware(logger, sagaMiddleware);
 
 let initialState = {
 	counter:0,
+	users: []
 }
 
-//Create Reducer. Which takes 2 arguments satate and  actions. Returns payload
+//Create Reducer. Which takes 2 arguments satae and  Actions and despatches
 function state( state = initialState, acttion){
 	switch(acttion.type){
 		case 'INCREMENT'://Despaatching increment Action
@@ -27,16 +31,24 @@ function state( state = initialState, acttion){
 		return Object.assign( {}, state , {
 			counter: state.counter - 1
 		});
+
+		case 'FETCH_USERS_SUCCESS'; //Despatching decrement action
+		return Object.assign( {}, state , {
+			users: action.payload
+		});
+
+
 		default:
 			return state;
 	}
 }
 
-//reducer=> state;
-//applyMiddleware is de-constructed from above
 let store = createStore( state , middleware);
 
-//We attache the store to the window and then calls the dispatcher object
+//run the root saga middleware. Compose all the multiple watchers if more than one. 
+sagaMiddleware.run(fetchUserWatcher);
+
+//We attache the store to the window and then dispatch
 window.store = store;
 
 //in the dispatch we call our Action creator functions
@@ -47,9 +59,9 @@ window.dispatcher = {
 	},
 	dispatchDecrement: () => {
 		state.dispatch({ type: 'DECREMENT'})
+	},
+	fetchUser: () => {
+		store.dispatch({ type: 'FETCH_USERS' })
 	}
 }
-//Run the following routines in the console. By iterating the following routines. Back and forwards
-//1. dispatcher.dispatchIncrement()
-//2. dispatcher.dispatchDecrement()
 
