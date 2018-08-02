@@ -8,7 +8,7 @@ import axios from 'axios';
 
 
 //saga function, calls action and dispatches
-//function* - generator function from es6 (manages asynchronous side efects. Stop start, recall, execute)
+//function* - generator function from es6 (manages asynchronous side efects. Stop, start, recall, execute)
 //es6  syntax
 
 function* fetchUsers(){
