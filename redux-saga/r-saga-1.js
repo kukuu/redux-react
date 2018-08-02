@@ -2,6 +2,7 @@
 // Author - Alexander Adu-Sarkodie
 //Using redux-saga
 //This is a counter based application
+//runtime is a polyfill to support generator functions
 
 import 'runtime';
 import { createStore, applyMiddleware } from 'redux';
