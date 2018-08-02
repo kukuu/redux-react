@@ -14,7 +14,7 @@ let initialState = {
 	counter:0,
 }
 
-//Create Reducer. Which takes 2 arguments satae and  Actions and despatches
+//Create Reducer. Which takes 2 arguments satate and  actions. Returns payload
 function state( state = initialState, acttion){
 	switch(acttion.type){
 		case 'INCREMENT'://Despaatching increment Action
@@ -31,9 +31,11 @@ function state( state = initialState, acttion){
 	}
 }
 
+//reducer=> state;
+//applyMiddleware is de-constructed from above
 let store = createStore( state , middleware);
 
-//We attache the store to the window and then dispatch
+//We attache the store to the window and then calls the dispatcher object
 window.store = store;
 
 //in the dispatch we call our Action creator functions
@@ -46,4 +48,7 @@ window.dispatcher = {
 		state.dispatch({ type: 'DECREMENT'})
 	}
 }
+//Run the following routines in the console. By iterating the following routines. Back and forwards
+//1. dispatcher.dispatchIncrement()
+//2. dispatcher.dispatchDecrement()
 
