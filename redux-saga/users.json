@@ -1,0 +1,26 @@
+{
+
+	"users": [
+		{
+			"id": 1,
+			"name": "Jake Williams",
+			"likes": "Fishing" 
+		},
+		{
+			"id": 2,
+			"name": "Luca Trinca",
+			"likes": "Pets" 
+		},
+		{
+			"id": 3,
+			"name": "Amir Saeed",
+			"likes": "Coding" 
+		},
+		{
+			"id": 4,
+			"name": "Jon Jenkins",
+			"likes": "Cricket" 
+		},
+
+	]
+}
