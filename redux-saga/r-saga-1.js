@@ -1,6 +1,6 @@
 
 // Author - Alexander Adu-Sarkodie
-//Using redux-saga
+//Using redux-saga middleware
 //This is a counter based application
 
 import 'runtime';
