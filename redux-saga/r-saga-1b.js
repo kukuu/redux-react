@@ -9,7 +9,7 @@ import { logger } from 'logger-redux';
 import { createSagaMiddleware } from 'redux-saga';
 import { axios } from 'axios';
 
-import { fetchUserWatcher } from './sagas'
+import { rootSaga } from './sagas'
 
 let sagaMiddleware = createSagaMiddleware();
 let middleware = applyMiddleware(logger, sagaMiddleware);
@@ -46,7 +46,7 @@ function state( state = initialState, acttion){
 let store = createStore( state , middleware);
 
 //run the root saga middleware. Compose all the multiple watchers if more than one. 
-sagaMiddleware.run(fetchUserWatcher);
+sagaMiddleware.run(rootSaga);
 
 //We attache the store to the window and then dispatch
 window.store = store;
@@ -63,13 +63,6 @@ window.dispatcher = {
 	fetchUser: () => {
 		store.dispatch({ type: 'FETCH_USERS' })
 	}
-	//if there were multiple sagas then you create a root saga
-	export functions* rootSaga(){
-		yield all([
-			fetchUserWatcher(),
-			anotherSaga()
-
-		])
-	}
+	
 }
 
