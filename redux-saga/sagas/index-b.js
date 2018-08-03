@@ -3,7 +3,7 @@
 
 
 import '../runtime';
-import { call, put, takeLatest } from 'redux-saga/effects';
+import { call, put, takeLatest, all } from 'redux-saga/effects';
 import axios from 'axios';
 
 
@@ -31,3 +31,12 @@ export function* fetchUserWatcher(){
 	// redux saga effect =>  takeLatest(). This  will cancel the previous fetches and use the last one.
 	yield takeLatest('FETCH_USERS', fetchUsers);
 }
+
+//if there were multiple sagas then you create a root saga
+	export functions* rootSaga(){
+		yield all([
+			fetchUserWatcher(),
+			anotherSaga()
+
+		])
+	}
