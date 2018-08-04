@@ -2,6 +2,7 @@
 // Author - Alexander Adu-Sarkodie
 //Using redux-saga
 //This is a counter based application
+//This script has been updated with a root saga 
 
 import 'runtime';
 import { createStore, applyMiddleware } from 'redux';
@@ -11,7 +12,7 @@ import { axios } from 'axios';
 
 import { rootSaga } from './sagas'
 
-let sagaMiddleware = createSagaMiddleware();
+let sagaMiddleware = createSagaMiddleware();// Replicates the thunk
 let middleware = applyMiddleware(logger, sagaMiddleware);
 
 let initialState = {
@@ -19,7 +20,7 @@ let initialState = {
 	users: []
 }
 
-//Create Reducer. Which takes 2 arguments satae and  Actions and despatches
+//Create Reducer. Which takes 2 arguments state and  Actions 
 function state( state = initialState, acttion){
 	switch(acttion.type){
 		case 'INCREMENT'://Despaatching increment Action
@@ -32,7 +33,7 @@ function state( state = initialState, acttion){
 			counter: state.counter - 1
 		});
 
-		case 'FETCH_USERS_SUCCESS'; //Despatching decrement action
+		case 'FETCH_USERS_SUCCESS'; //Returning payload
 		return Object.assign( {}, state , {
 			users: action.payload
 		});
