@@ -20,6 +20,11 @@
 			"id": 4,
 			"name": "Jon Jenkins",
 			"likes": "Cricket" 
+		},
+		{
+			"id": 5,
+			"name": "Peter Sampson",
+			"likes": "Volley" 
 		}
 	]
 }
