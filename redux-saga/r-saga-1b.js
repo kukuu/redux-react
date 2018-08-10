@@ -54,6 +54,7 @@ window.store = store;
 
 //in the dispatch we call our Action creator functions
 // Custom Dispatcher Object we attach to the window :  we attach the reducer to dispatch on the action type
+//With Action and Action Creator
 window.dispatcher = {
 	dispatchIncrement: () => {
 		store.dispatch({ type: 'INCREMENT'})
