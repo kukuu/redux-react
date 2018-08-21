@@ -1,0 +1,4 @@
+bookworm-api > node
+
+var bcrypt = reqire('bcrypt');
+bcrypt.hashsync('8976009',10)
