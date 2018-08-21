@@ -50,8 +50,3 @@ Changes made to the application state. An object with 2 keys. Type and paylaod
 
 Editing in the development environment comes with live reload!
 
-
-# Calorie Converter
-
-A separate BMI application  (  /calorie-convertet/) is also provided in Vanilla JavaScript. This is only a guide to how much 
-calories is recommended based on age, height and weight! Debatable --)
