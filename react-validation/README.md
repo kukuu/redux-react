@@ -1,14 +1,12 @@
 # react-validation
 
-[![npm version](https://badge.fury.io/js/react-validation.svg)](https://badge.fury.io/js/react-validation) [![Build Status](https://travis-ci.org/Lesha-spr/react-validation.svg?branch=master)](https://travis-ci.org/Lesha-spr/react-validation) [![Coverage Status](https://coveralls.io/repos/github/Lesha-spr/react-validation/badge.svg?branch=master)](https://coveralls.io/github/Lesha-spr/react-validation?branch=master) [![dependencies](https://david-dm.org/Lesha-spr/react-validation.svg)](https://david-dm.org/Lesha-spr/react-validation) [![devDependencies](https://david-dm.org/Lesha-spr/react-validation/dev-status.svg)](https://david-dm.org/Lesha-spr/react-validation/?type=dev)
 
 Component to provide simple form validation for React components. It uses the [Controlled Components](https://facebook.github.io/react/docs/forms.html#controlled-components) approach for validation.
 
 It is not easy to validate forms with React. The reason is a one-way data flow style. In this case we can't affect forms from the inputs in an easy way.
 React-validation provides several components which are 'connected' to the form via the input's method attached by the Form component.
 
-### [DEMO](http://lesha-spr.github.io/react-validation/)
-### [DEMO src](https://github.com/Lesha-spr/react-validation/tree/master/src/App.js)
+For handling state changes: login/logout with tokens see - https://github.com/Remchi/bookworm-react/commit/bbf96e2b3ee1ed16eb3013c6410a549575d84c68
 
 It is just a validation and doesn't provide any model or something similar. You can use FormData or something like [form-serialize](https://www.npmjs.com/package/form-serialize) to get form data.
 
@@ -289,3 +287,8 @@ Button
 ```
 
 A wrapper around the native ```button```. React-validation disables (adds ```disabled``` prop) the button on error occurrences.
+
+
+### [DEMO](http://lesha-spr.github.io/react-validation/) 
+
+### [DEMO src](https://github.com/Lesha-spr/react-validation/tree/master/src/App.js)
