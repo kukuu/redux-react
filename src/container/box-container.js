@@ -15,8 +15,8 @@ class BoxCon extends React.Component{
     }
 }
 
-const mapDispatchToProps = (state) => {
+const mapStateToProps = (state) => {
     return state;
 };
 
-export default connect(mapDispatchToProps, actionCreators )(BoxCon);
+export default connect(mapStateToProps, actionCreators )(BoxCon);
