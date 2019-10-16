@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Box from '../component/box'
+import {connect} from 'react-redux';
+import * as actionCreators from '../actions/'
+import Box from '../component/box';
 
 class BoxCon extends React.Component{
     render(){
@@ -13,4 +15,8 @@ class BoxCon extends React.Component{
     }
 }
 
-export default BoxCon;
+const mapDispatchToProps = (state) => {
+    return state;
+};
+
+export default connect(mapDispatchToProps, actionCreators )(BoxCon);
