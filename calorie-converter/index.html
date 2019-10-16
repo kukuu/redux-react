@@ -1,0 +1,39 @@
+<!--Author: Alexander Adu-Sarkodie-->
+<!--Purpose:Calorie Converter written in Vanilla JavaScript and Semantic HTML-->
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <h1>Seneca Learning  </h1>
+        <h2>Calorie intake guide</h2>
+
+        <label>Female:
+          <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+        </label>
+        <label>Male:
+          <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+        </label>
+        <label>Age:
+          <input id="age" type="number" oninput="calsPerDay()" value="50">
+          years
+        </label>
+        <label>Height:
+          <input id="height" type="number" oninput="calsPerDay()" value="70">
+          in inches (12 inches=1 foot)
+        </label>
+        <label>Weight:
+          <input id="weight" type="number" oninput="calsPerDay()" value="225">
+          in pounds
+        </label>
+        <label onclick="calsPerDay">
+          Base metabolic rate: <span id="totalCals"></span> kcal per day
+        </label>
+        <a href="http://localhost:3000/">read more</a>
+
+        <script type="text/javascript" src="js/calories.js"></script>
+
+    </body>
+</html>
