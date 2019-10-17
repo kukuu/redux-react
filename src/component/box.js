@@ -5,7 +5,8 @@ class Box extends React.Component{
     render(){
         return(
             <div className="wrapper">
-                <div className="box">
+                <div className="box" style= `${
+                backgroundColor: this.props.color }` >
                     <button> Change Colour </button>
                 </div>
              </div>

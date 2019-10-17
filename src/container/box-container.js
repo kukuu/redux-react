@@ -8,7 +8,7 @@ class BoxCon extends React.Component{
     render(){
         return(
             <div>
-                <Box />
+                <Box color = { this.props.color } />
             </div>
         )
 
