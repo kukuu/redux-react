@@ -7,7 +7,7 @@ class Box extends React.Component{
             <div className="wrapper">
                 <div className="box" style= `${
                 backgroundColor: this.props.color }` >
-                    <button> Change Colour </button>
+                    <button onclick = {() => {this.props.handleClick()}}> Change Colour </button>
                 </div>
              </div>
         )
