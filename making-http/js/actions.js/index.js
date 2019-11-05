@@ -42,7 +42,5 @@ const store = createStore(
 )
  
 // DISPATCH 
-store.dispatch(getStatus())
- 
-// console output: good 
+store.dispatch(getStatus()) 
  
