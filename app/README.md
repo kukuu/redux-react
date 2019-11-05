@@ -50,3 +50,7 @@ Changes made to the application state. An object with 2 keys. Type and paylaod
 
 Editing in the development environment comes with live reload!
 
+## Architecture
+
+https://github.com/kukuu/AGILITY/blob/master/white-paper/react-redux.png
+
