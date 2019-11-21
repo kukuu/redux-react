@@ -17,7 +17,7 @@ To instal and run the application follow the following steps:
 
 4. Follow instructions to preview in default port from your local host or update port to preview
 
-5. Any issues follow steps below:
+5. Any issues  [let me know](https://github.com/kukuu?tab=repositories) or follow steps below:
 
 ```
  
