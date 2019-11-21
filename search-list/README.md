@@ -18,7 +18,7 @@ To instal and run the application follow the following steps:
 4. Follow instructions to preview in default port from your local host or update port to preview
 
 ```
-Any issues  [let me know](https://github.com/kukuu?tab=repositories) or follow steps below:
+You may have to opitimise or silence a regular expression statement in your node_modules. Follow instructions from the command prompt if it happens.  Any issues  [let us know](https://github.com/kukuu?tab=repositories) or follow steps below:
 
 ## `npm start` doesn’t detect changes
 
