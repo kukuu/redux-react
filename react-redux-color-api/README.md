@@ -17,6 +17,14 @@ To instal and run the application follow the following steps:
 
 4. Follow instructions to preview in default port from your local host or update port to preview
 
+5. The data and flow graphs moves from top to bottom. From parent to children
+
+i. The API call loads the request from the very top and provides the payload
+
+ii. Using Axios client. In the callback it returns despatch with the action(method) to change the state of the application. State is passed as prop here.
+
+iii. We destructure the action to listen to events (subscribe).
+
 5. Any issues follow steps below:
 
 ```
