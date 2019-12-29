@@ -1,0 +1,91 @@
+$primary: #32cd32;
+
+$link: #0000ff;
+body {
+	margin:0 10px 0 20px;
+}
+
+
+div {
+	align: center;
+}
+
+h2 {
+	color: $primary;
+	text-align:center;
+	
+}
+
+h1 {
+	text-align:center;
+	color:$primary;
+}
+
+h1 span {
+	text-align:right;
+	color: $link;
+	font-size:0.60em;
+	float:right;
+}
+
+img {
+	margin-top:15px;
+}
+
+p  {
+	margin-bottom:0;
+}
+
+ span.un, span.pwd {
+	padding : 5px;
+}
+
+button {
+	float:right;
+	margin-top:5px;
+}
+
+ul li {
+	
+	display:inline-block;
+	padding-right:20px;
+	border:1px solid #808080;
+	margin-right:10px;
+	text-align:center;
+	width:100px;
+	border-radius:3px;
+}
+
+
+.container-1{
+  display:flex;
+
+}
+
+
+.container-1 div{
+	padding:10px;
+	margin-right:10px;
+
+
+}
+
+.box-1{
+	flex:2;
+	order:1;
+	
+}
+
+.box-2{
+	flex:1;
+	order:2;
+	
+}
+
+.box-1, .box-2 {
+	border-radius:3px;
+	border:1px #ccc solid;
+}
+
+
+
