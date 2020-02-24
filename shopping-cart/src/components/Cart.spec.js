@@ -30,7 +30,7 @@ describe('Cart component', () => {
 
   it('should display add some products message', () => {
     const { em } = setup()
-    expect(em.text()).toMatch(/^Please add some products to cart/)
+    expect(em.text()).toMatch(/^Please add some items to the cart/)
   })
 
   it('should disable button', () => {
@@ -43,13 +43,13 @@ describe('Cart component', () => {
       {
         id: 1,
         title: 'Product 1',
-        price: 9.99,
+        price: 19.99,
         quantity: 1
       }
     ]
 
     it('should render products', () => {
-      const { products } = setup('9.99', product)
+      const { products } = setup('19.99', product)
       const props = {
         title: product[0].title,
         price: product[0].price,
@@ -60,12 +60,12 @@ describe('Cart component', () => {
     })
 
     it('should not disable button', () => {
-      const { button } = setup('9.99', product)
+      const { button } = setup('19.99', product)
       expect(button.prop('disabled')).toEqual('')
     })
 
     it('should call action on button click', () => {
-      const { button, actions } = setup('9.99', product)
+      const { button, actions } = setup('19.99', product)
       button.simulate('click')
       expect(actions.onCheckoutClicked).toBeCalled()
     })
